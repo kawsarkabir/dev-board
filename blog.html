@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dev Board | Blogs</title>
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
+    <!-- daisy ui and tailwindCSS -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.9/daisyui.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- css for google font -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+</head>
+
+<body class="bg-[#F4F7FF] h-screen py-5">
+    <section class="container mx-auto">
+        <header>
+            <nav>
+                <div class="navbar bg-[#fff] shadow-sm rounded-md">
+                    <div class="flex-1">
+                        <div class="flex items-center gap-2">
+                            <img width="30" src="./assets/logo.png" alt="" />
+                            <h1 class="text-xl">
+                                Dev<span class="font-semibold text-[#00303C]">Board</span>
+                            </h1>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="complete-btn btn bg-[#3752FD] hover:bg-indigo-500 text-[#ffffffdf]">
+                            Back To Desk
+                        </button>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <p class="text-2xl lg:text-3xl font-semibold p-4 mt-5 text-center">Blogs</p>
+            <!-- blog 01 -->
+            <div class="p-5 bg-[#fff] rounded-lg my-5">
+                <h1 class="text-3xl text-[#00303C] font-semibold border-b border-dashed pb-4 border-[#00000047]">
+                    Question-1: What are the different ways to select an element in the
+                    DOM?
+                </h1>
+                <p class="my-3 text-xl text-[#222222c9]">
+                    The easiest way to access a single element in the DOM is by its unique ID. You can get an element by
+                    ID with the getElementById() method of the document object.
+                </p>
+            </div>
+            <!-- blog 02 -->
+            <div class="p-5 bg-[#fff] rounded-lg my-5">
+                <h1 class="text-3xl text-[#00303C] font-semibold border-b border-dashed pb-4 border-[#00000047]">
+                    Question-2: What is the difference between innerHTML, innerText, and textContent?
+                </h1>
+                <p class="my-3 text-xl text-[#222222c9]">
+                    In HTML, innerHTML, innerText, and textContent are properties of the DOM (Document Object Model).
+                    They allow you to read and update the content of HTML elements.
+                </p>
+            </div>
+            <!-- blog 03 -->
+            <div class="p-5 bg-[#fff] rounded-lg my-5">
+                <h1 class="text-3xl text-[#00303C] font-semibold border-b border-dashed pb-4 border-[#00000047]">
+                    Question-3: What is event delegation in the DOM?
+                </h1>
+                <p class="my-3 text-xl text-[#222222c9]">
+                    In the DOM, "event delegation" is a JavaScript design pattern where you attach a single event
+                    listener to a parent element instead of adding listeners to multiple child elements.
+                </p>
+            </div>
+            <!-- blog 04 -->
+            <div class="p-5 bg-[#fff] rounded-lg my-5">
+                <h1 class="text-3xl text-[#00303C] font-semibold border-b border-dashed pb-4 border-[#00000047]">
+                    Question-4: What is event bubbling in the DOM?
+                </h1>
+                <p class="my-3 text-xl text-[#222222c9]">
+                    Event bubbling is a type of DOM event propagation where the event first triggers on the innermost
+                    target element and then successively triggers on the ancestors (parents) of the target element in
+                    the same nesting hierarchy till it reaches the outermost DOM element or document object.
+                </p>
+            </div>
+            <!-- blog 05 -->
+            <div class="p-5 bg-[#fff] rounded-lg my-5">
+                <h1 class="text-3xl text-[#00303C] font-semibold border-b border-dashed pb-4 border-[#00000047]">
+                    Question-5: How do you create, add, and remove elements using JavaScript?
+                </h1>
+                <p class="my-3 text-xl text-[#222222c9]">
+                    We can create, add, and remove elements using JavaScript like document.createElement('div');
+                    document.body.appendChild(newElement); newElement.remove();
+                </p>
+            </div>
+        </main>
+    </section>
+
+    <script src="./scripts/blog.js"></script>
+</body>
+
+</html>
