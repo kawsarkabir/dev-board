@@ -52,7 +52,61 @@
         </header>
         <!-- header end -->
         <!-- main start -->
-
+        <main class="grid grid-cols-4 gap-6 my-5">
+            <div class=" col-span-3 bg-[#FFF] p-4 rounded-xl">
+                <div class="grid grid-cols-1 lg:grid-cols-4 gap-5 border-[#3752FD33] border-b border-dashed pb-7">
+                    <div class="bg-[#F4F7FF] rounded-xl flex items-center gap-4 p-4 col-span-1">
+                        <div class="bg-[#fff] p-3 rounded-full">
+                            <img width="20" src="./assets/checkbox.png" alt="" />
+                        </div>
+                        <div>
+                            <small>Task Assigned </small>
+                            <h1 class="text-3xl font-bold text-[#00303C]">
+                                6
+                            </h1>
+                        </div>
+                    </div>
+                    <div
+                        class="flex flex-col lg:flex-row items-center gap-2 lg:gap-4 bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] rounded-xl px-2 lg:px-7 py-4 col-span-2">
+                        <div>
+                            <img src="./assets/board.png" alt="" />
+                        </div>
+                        <div>
+                            <p class="font-semibold text-[#ffffff]">
+                                Discover Something New Today!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-span-1">
+                        <div
+                            class="bg-[#F4F7FF] rounded-xl flex items-center justify-center py-5 lg:py-8  col-span-1 gap-2">
+                            <div class="bg-[#fff] p-3 rounded-full">
+                                <img width="20" src="./assets/calender.png" alt="" />
+                            </div>
+                            <div class="text-[#00303C]">
+                                <p id="current_date" class="">
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card container start -->
+                <!-- card container end -->
+            </div>
+            <!-- activities log section start -->
+            <div class=" col-span-1 bg-white rounded-xl">
+                <div class="text-center border-[#3752FD33] border-b border-dashed p-5">
+                    <div class="flex items-center justify-center gap-3">
+                        <img src="./assets/activity.png" alt="" />
+                        <h1 class="text-[#00303C]">Activity Log</h1>
+                    </div>
+                    <button class="btn bg-[#3752FD] hover:bg-indigo-500 text-[#ffffffdf] mt-5">
+                        Clear History
+                    </button>
+                </div>
+            </div>
+            <!-- activities log section end -->
+        </main>
         <!-- main end -->
         <script src="./app.js"></script>
 </body>
