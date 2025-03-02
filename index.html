@@ -22,7 +22,7 @@
     </style>
 </head>
 
-<body class="bg-[#F4F7FF] h-screen py-5 font-primary">
+<body class="bg-[#F4F7FF] min-h-screen py-5 font-primary">
     <section class="container mx-auto">
         <!-- header start -->
         <header>
@@ -39,11 +39,11 @@
                     <div class="flex gap-3 lg:gap-5">
                         <div class="flex items-center gap-1 px-3 rounded-full bg-[#F4F7FF]">
                             <img width="18" src="./assets/checkbox.png" alt="" />
-                            <h1 class="font-bold text-[#1E1E1E] text-lg">
+                            <h1 id="done-count" class="font-bold text-[#1E1E1E] text-lg">
                                 23
                             </h1>
                         </div>
-                        <div class="p-2 bg-[#F4F7FF] rounded-full mr-2 hover:cursor-pointer">
+                        <div id="random_bg_change" class="p-2 bg-[#F4F7FF] rounded-full mr-2 hover:cursor-pointer">
                             <img width="25" src="./assets/theme-btn.png" alt="" />
                         </div>
                     </div>
@@ -61,7 +61,7 @@
                         </div>
                         <div>
                             <small>Task Assigned </small>
-                            <h1 class="text-3xl font-bold text-[#00303C]">
+                            <h1 id="task-assign" class="text-3xl font-bold text-[#00303C]">
                                 6
                             </h1>
                         </div>
@@ -255,10 +255,11 @@
                         <img src="./assets/activity.png" alt="" />
                         <h1 class="text-[#00303C]">Activity Log</h1>
                     </div>
-                    <button class="btn bg-[#3752FD] hover:bg-indigo-500 text-[#ffffffdf] mt-5">
+                    <button id="clear-history" class="btn bg-[#3752FD] hover:bg-indigo-500 text-[#ffffffdf] mt-5">
                         Clear History
                     </button>
                 </div>
+                <div id="history" class="p-6"></div>
             </div>
             <!-- activities log section end -->
         </main>
