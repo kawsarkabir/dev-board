@@ -28,9 +28,8 @@ document.getElementById(
 document.addEventListener("click", function (event) {
 	var clickedButton = event.target;
 
-	// Check if the clicked element has the class "completeButton"
 	if (clickedButton.className.indexOf("completeButton") === -1) {
-		return; // Ignore clicks on other elements
+		return;
 	}
 
 	alert("Board Updated Successfully!!");
@@ -46,24 +45,21 @@ document.addEventListener("click", function (event) {
 	}
 	doneCount.innerText = doneTaskCount + 1;
 
-	// Get current time
 	var now = new Date();
 	var buttonClickTime = now.toLocaleTimeString();
 
-	// Find the parent card manually
 	var parent = clickedButton.parentNode;
 	while (parent) {
 		if (parent.className.indexOf("mt-7") !== -1) {
-			break; // Found the parent card
+			break;
 		}
-		parent = parent.parentNode; // Keep going up
+		parent = parent.parentNode;
 	}
 
 	if (parent) {
 		var cardHeading = parent.getElementsByTagName("h1")[0].innerText;
 		var historyDiv = document.getElementById("history");
 
-		// Create history entry
 		var newEntry = document.createElement("p");
 		newEntry.className = "p-5 bg-[#F4F7FF] rounded-lg mt-4";
 		newEntry.innerHTML =
@@ -78,18 +74,15 @@ document.addEventListener("click", function (event) {
 		historyDiv.appendChild(newEntry);
 	}
 
-	// Disable the button after completion
 	clickedButton.disabled = true;
 	clickedButton.innerText = "Completed";
 	clickedButton.className += " opacity-50 cursor-not-allowed";
 
-	// Check if all tasks are completed
 	if (taskCount === 1) {
 		alert("Congrats! You completed all tasks.");
 	}
 });
 
-// Event listener for clearing history
 document.getElementById("clear-history").addEventListener("click", function () {
 	document.getElementById("history").innerHTML = "";
 });
